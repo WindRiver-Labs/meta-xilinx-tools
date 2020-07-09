@@ -83,7 +83,7 @@ def patch_yaml(config, configflags, type, type_dict, d):
 
 python do_create_yaml() {
     import sys, os
-    os.sys.path.append(os.path.join(d.getVar('RECIPE_SYSROOT_NATIVE'),d.getVar('PYTHON_SITEPACKAGES_DIR')[1::]))
+    os.sys.path.append(os.path.join(d.getVar('RECIPE_SYSROOT_NATIVE'),d.getVar('PYTHON_NATIVE_SITEPACKAGES_DIR')[1::]))
     import yaml
     yaml_dict = {}
 
